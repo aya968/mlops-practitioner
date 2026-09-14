@@ -1,19 +1,9 @@
-# Module 1 Report: Baseline Model Performance
+# Module 1 Report & Maturity Self-Assessment
 
-## Validation Metrics
-* **Validation RMSE:** {rmse:.2f} minutes
-* **Validation MAE:** {mae:.2f} minutes
+## MLOps Maturity Self-Assessment
 
----
+**Current Level**: Level 1 (Automated Pipeline & Standardized Packaging)
 
-## Model Overview
-* **Model Architecture:** Linear Regression (Baseline)
-* **Features Used:**
-  * `PU_DO` (Categorical interaction: Pickup Location + Dropoff Location)
-  * `log_trip_distance` (Numerical: Log-transformed trip distance)
-* **Preprocessing:** `DictVectorizer(sparse=True)`
-* **Target Variable:** `log_duration` (Evaluated on `np.expm1` inverse transformation in real minutes)
+Our pipeline currently implements structured logging, automated testing with quality gates (79% coverage), non-root Docker containerization, ONNX model optimization, and REST API serving via FastAPI. 
 
-## Benchmark Comparison
-* **Baseline LinearRegression RMSE:** 6.54 minutes
-* **RandomForestRegressor (Iterative Experiment) RMSE:** 4.79 minutes
+To reach **Level 2 (Continuous Training & Automated Pipeline Deployment)**, we need to implement automated CI/CD pipelines (e.g., GitHub Actions) to automate retraining triggers upon data drift detection. Additionally, a central Model Registry (such as MLflow) and automated infrastructure deployment via Terraform are missing to achieve full Level 2 maturity.

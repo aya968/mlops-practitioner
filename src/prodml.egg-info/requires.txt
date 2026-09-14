@@ -1,0 +1,16 @@
+scikit-learn
+pandas
+pyarrow
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+
+[dev]
+pytest
+pytest-cov
+ruff
+black
+mypy
+httpx
+pre-commit

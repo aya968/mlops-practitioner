@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: prodml
+Version: 0.1.0
+Summary: Add your description here
+Author-email: 'aya968' <'ayaali66092@gmail.com'>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: httpx; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+
+# mlops-practitioner
